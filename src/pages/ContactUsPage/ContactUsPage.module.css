@@ -1,0 +1,79 @@
+.contact-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+}
+
+.row-content {
+    display: flex;
+    width: 100%;
+   
+}
+
+.input-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.select-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.select {
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+:global(.css-13cymwt-control){
+    border-radius: 2px 0px 0px 2px !important;
+
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 0px 2px 2px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 18px;
+    color: #ccc;
+
+}
+.icon-message{
+    position: relative;
+    top: -62px;
+}
+.input {
+    flex-grow: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 2px 0px 0px 2px;
+    box-sizing: border-box;
+}
+.textarea{
+    border-color:#ccc;
+    border-radius: 2px 0px 0px 2px;
+    width: 100%;
+}
+[dir='rtl'] .icon-message{
+    position: relative;
+    top: -58px;
+}

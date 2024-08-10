@@ -1,0 +1,110 @@
+.header {
+    width: 100%;
+  }
+  
+  .blackHeader {
+    height: 140px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    position: relative;
+  }
+    
+  .logo {
+    margin-block-start: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .titleHeader {
+    margin-block-end: 0;
+    margin-top: 10px;
+    font-size: 47px;
+    color: #0a638a;
+    text-shadow: 0.1em 0.1em 0.1em #6e6d6d;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+    margin-block: 0px;
+    color: #09557d;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .telegramIcon {
+        padding-block-start: 1px;
+        border-radius: 5px;
+        color: white !important;
+        width: 24px;
+        height: 24px;   
+    }
+  .iconHeader {
+    font-size: 25px;
+    color: black;
+    margin: 3px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #09557d;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+  
+  .fontText {
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .fontText.active {
+    background-color: #f2018e;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .blackHeader {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .logoPart {
+        margin-bottom: 15px;
+    }
+
+    .titlePart {
+        align-items: center; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .titleHeader {
+        font-size: 36px; 
+    }
+
+    .subtitle {
+        margin-top: 5px; 
+        font-size: 14px; 
+    }
+
+    .socialIcons {
+        justify-content: center; 
+        margin-left: 0; 
+    }
+
+    .topnav {
+        justify-content: center; 
+    }
+
+    .fontText {
+        padding: 8px 12px; 
+        font-size: 15px;
+    }
+}

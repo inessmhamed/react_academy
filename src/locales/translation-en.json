@@ -1,0 +1,106 @@
+{
+    "common": {
+        "AlRaeed Academy": "AlRaeed Academy for Training"
+    },
+    
+    "navbar": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "formations": "Formations",
+        "news": "News",
+        "services": "Services",
+        "consulting": "Consulting",
+        "contactUs": "Contact us"
+    },
+    "header": {
+        "title": "AlRaeed Academy for Training",
+        "subtitle": "Basic and continuing training registered under No. 19-055-73"
+       
+    },
+    "homepage": {
+        "formationFactorsSection": {
+            "title": "Latest academy news",
+            "readMore": "read more",
+            "allFormation": "All Formations",
+            "successCard1": {
+                "title": "Calligraphy improvement course",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            "successCard2": {
+                "title": "Calligraphy improvement course",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            "successCard3": {
+                "title": "Calligraphy improvement course",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            "successCard4": {}
+        },
+        "goals": {
+            "title": "Our goals",
+            "description": "The academy aims to qualify and raise the efficiency of individuals to meet professional challenges and adapt to market requirements. This is done by offering specialized training courses in various fields such as leadership, personal development, technology, and languages. In addition, the academy provides in-person and live training options to meet everyone's needs.",
+            "contactUs": "Contact Us"
+        },
+        "about": {
+            "title": "About us",
+            "description": "The academy aims to qualify and raise the efficiency of individuals to meet professional challenges and adapt to market requirements. This is done by offering specialized training courses in various fields such as leadership, personal development, technology, and languages. In addition, the academy provides in-person and live training options to meet everyone's needs.",
+            "readMore": "Read more"
+        },
+        "fieldsSection": {
+            "title": "Our fields",
+            "langue": "Langue",
+            "informatique": "Informatique",
+            "profession": "Profession",
+            "development": "Self development"
+        },
+        "servicesSection": {
+            "title": "Our vision and mission",
+            "vision": "Vision",
+            "vision_desc": "The academy strives to be an intellectual catalyst and an incubator of progress for human development.",
+            "mission": "Mission",
+            "mission_desc": "The academy aims to provide knowledge and expertise in various disciplines and innovative solutions according to international standards, making the academy a beacon of progress and societal advancement."
+        }
+    },
+    "aboutUspage": {
+        "title":"About Academy",
+        "aboutus-title":"About Us",
+        "aboutus-content":"Our academy is a basic and continuous training institution registered with the Ministry of Training and Employment under number 19-055-73. It specializes in the field of training and self and professional development. The academy organizes courses in various fields, both in-person and online, presented by a group of distinguished trainers with expertise from within and outside the Republic of Tunisia. Our goal is to develop individuals and society, enhance their capabilities on a personal and professional level, and expand their options.",
+         "vision-title":"Our Vision",
+         "vision-content":"AlRaeed Academy for Training and Development aspires to be a distinguished center in the field of training and development, contributing to the building of individuals and institutions, and the enhancement of skills and capabilities.",
+         "mission-title":"Our Mission",
+         "mission-content":"To provide outstanding training courses and services for individuals and institutions, contributing to their personal growth and the development of their skills and capabilities.",
+         "services-title":"Our Fields",
+         "services-content":"AlRaeaed Academy for Training and Development offers its participants training courses in various fields to elevate the level of the trainee, enhance their competencies, and develop their skills, including:\n Professional crafts \n Self-development \n  Languages"
+    },
+    "contactUspage":{
+        "fullName":"FullName",
+        "phone":"Phone",
+        "email":"Email",
+        "fields":"Fields",
+        "message":"Message",
+        "communication":"Communication",
+        "send":"Send"
+
+    },
+    "footer": {
+        "copyright": "AlRaeed Academy. All Rights Reserved.",
+        "contact us": "Contact Us",
+        "address": "Habib Bourguiba Avenue, Kebili - Tunisia",
+        "telephone":"+216 50 097 594",
+        "intro": "A training and formation center that offers courses in self-development, as well as continuing and basic vocational training",
+        "academyVision": "Academy Vision",
+        "connectwithus": "Connect with us"
+    },
+    "media": {
+        "Youtube": "Youtube",
+        "Facebook": "Facebook",
+        "Instagram": "Instagram",
+        "Twitter": "Twitter",
+        "LinkedIn": "LinkedIn",
+        "Telegram": "Telegram",
+        "Gmail": "Gmail"
+    },
+    "map":{
+        "address":"Habib Bourguiba Avenue - First floor of Tunisie Telecom Building, Kebili - Tunisia"
+    }
+}

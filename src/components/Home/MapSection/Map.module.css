@@ -1,0 +1,14 @@
+.map {
+    overflow: hidden;
+    position: relative;
+}
+
+.mapContainer {
+    margin-inline-start: 20px;
+    height: 550px;
+    width: 100%
+}
+
+.leaflet-control-container .leaflet-bottom .leaflet-right {
+    display: none;
+}

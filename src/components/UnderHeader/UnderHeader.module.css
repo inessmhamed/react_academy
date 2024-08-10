@@ -1,0 +1,27 @@
+.underHeader_content{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    position: absolute;
+    z-index: 999;
+}
+.underHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px; 
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #09557d; 
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #d1d5db;
+}
