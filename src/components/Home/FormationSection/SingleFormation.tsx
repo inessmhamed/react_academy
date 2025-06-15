@@ -11,9 +11,11 @@ interface SingleFormationProps {
   title: string;
   description: string;
   index: number;
+  id?: number; // Make id optional since it might not be available in all contexts
 }
 
-const SingleFormation: React.FC<SingleFormationProps> = ({ icon, title, description, index }) => {
+const SingleFormation: React.FC<SingleFormationProps> = ({ icon, title, description, index, id = 6 }) => {
+  // Default to id 6 which is the 3D course shown in the image
   const ref = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
   const isInView = useInView(ref, 0, false);
@@ -51,7 +53,7 @@ const SingleFormation: React.FC<SingleFormationProps> = ({ icon, title, descript
         <motion.div variants={paragraphVariants}>
           <div className={styles['singleFormation__title']}>{title}</div>
           <p className={styles['singleFormation__description']}>{description}</p>
-          <Link to='formation_page' target='_blank'>{t('homepage.formationFactorsSection.readMore')}</Link>
+          <Link to={`/formation_details/${id}`}>{t('homepage.formationFactorsSection.readMore')}</Link>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -14,36 +14,58 @@ const Footer = () => {
   const isArabic = i18n.language === 'ar';
   
   return (
-    <footer className={styles['footer']}>
+    <footer className={styles.footer}>
       <div className={styles['footer-block']}>
+        {/* Logo Section */}
         <div className={styles['logo-part']}>
           <div className={styles['logo-centre']}>
-            <img src={logo} width='150px' height='150px' className={styles['logo']} />
+            <img 
+              src={logo} 
+              width='150' 
+              height='150' 
+              className={styles.logo} 
+              alt="Al Raeed Academy Logo" 
+            />
             <h2 className={styles['title-header']}>{t('common.AlRaeed Academy')}</h2>
           </div>
         </div>
+        
+        {/* Contact Information Section */}
         <div className={styles['element-contact']}>
           <h4>{t('footer.contact us')}</h4>
-          <div className={styles['info_content']}>
+          <div className={styles.info_content}>
             <div className={styles['flx-row']}>
-              <FontAwesomeIcon icon={faPhoneAlt} className={`${styles['info-icon']} ${!isArabic ? styles['icon-flip'] : ''}`}  />
-              <div className={styles['info']}>{t('footer.telephone')}</div>
+              <FontAwesomeIcon 
+                icon={faPhoneAlt} 
+                className={`${styles['info-icon']} ${!isArabic ? styles['icon-flip'] : ''}`} 
+              />
+              <div className={`${styles.info} ${styles['ltr-text']}`}>{t('footer.telephone')}</div>
             </div>
             <div className={styles['flx-row']}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className={styles['info-icon']}/>
-              <div className={styles['info']}>{t('footer.address')}</div>
+              <FontAwesomeIcon 
+                icon={faMapMarkerAlt} 
+                className={styles['info-icon']}
+              />
+              <div className={styles.info}>{t('footer.address')}</div>
             </div>
             <div className={styles['flx-row']}>
-              <FontAwesomeIcon icon={faEnvelope} className={styles['info-icon']} />
-              <div className={styles['info']}>alraeedacademy@gmail.com</div>
+              <FontAwesomeIcon 
+                icon={faEnvelope} 
+                className={styles['info-icon']} 
+              />
+              <div className={`${styles.info} ${styles['ltr-text']}`}>alraeedacademy@gmail.com</div>
             </div>
           </div>
         </div>
+        
+        {/* Academy Vision Section */}
         <div className={styles['info-centre']}>
           <h4>{t('footer.academyVision')}</h4>
-          <p className={styles['info-intro']}> {t('footer.intro')}</p>
+          <p className={styles['info-intro']}>{t('footer.intro')}</p>
         </div>
-        <div className={styles['info-centre']}>
+        
+        {/* Social Media Section */}
+        <div className={styles['info-media']}>
           <h4>{t('footer.connectwithus')}</h4>
           <div className={styles['flx-row-media']}>
             <Link to='https://www.youtube.com/channel/UChYhbCNQvq9zoSNMZX4PLmg' target='_blank' title={t('media.Youtube')}>
@@ -62,8 +84,11 @@ const Footer = () => {
               <FontAwesomeIcon icon={faLinkedin} className={styles.iconStyle} />
             </Link>
             <Link to='https://t.me/alraeedacademy?fbclid=IwAR3f9vQs-_fLxN7ZdS5uvJ2relI7XEtEeE8JnLp71m4V3lFKn-0IjdcTGTM' target='_blank' title={t('media.Telegram')}>
-              <img src={telegram} alt="Telegram" className={`${styles.iconStyle} ${styles.telegramIcon}`} />
-
+              <img 
+                src={telegram} 
+                alt="Telegram" 
+                className={`${styles.iconStyle} ${styles.telegramIcon}`} 
+              />
             </Link>
             <Link to='https://www.facebook.com/alraeedacademy' target='_blank' title={t('media.Gmail')}>
               <FontAwesomeIcon icon={faGooglePlusSquare} className={styles.iconStyle} />
@@ -71,13 +96,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles['footer__copyright']}`}>
-        <p>
-          © {year} {t('footer.copyright')}
-        </p>
+      
+      {/* Copyright Section */}
+      <div className={styles.footer__copyright}>
+        <p>© {year} {t('footer.copyright')}</p>
       </div>
     </footer>
-
   );
 };
 

@@ -7,6 +7,7 @@
         "home": "Home",
         "aboutUs": "About Us",
         "formations": "Formations",
+        "detailsFormation": "Details Formation",
         "news": "News",
         "services": "Services",
         "consulting": "Consulting",
@@ -79,8 +80,13 @@
         "fields":"Fields",
         "message":"Message",
         "communication":"Communication",
-        "send":"Send"
-
+        "send":"Send",
+        "isRequired":"is required",
+        "validPhone":"Please enter a valid phone number",
+        "validEmail":"Please enter a valid email address",
+        "successMessage":"Your message has been sent successfully!",
+        "sent":"Sent!",
+        "formInstructions":"We kindly ask you to fill in the required fields accurately and provide correct information, so that we can communicate with you more effectively and professionally."
     },
     "footer": {
         "copyright": "AlRaeed Academy. All Rights Reserved.",

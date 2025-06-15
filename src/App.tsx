@@ -9,6 +9,8 @@ import { useTranslation } from 'react-i18next';
 import Footer from './components/shared/Footer/Footer';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage/ContactUsPage';
+import FormationsPage from './pages/FormationsPage/FormationsPage';
+import DetailsFormationPage from './pages/DetailsFormationPage/DetailsFormationPage';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 
@@ -35,6 +37,8 @@ const App = () => {
             <Route path='/home' element={<HomePage />} />
             <Route path='/about-us' element={<AboutUsPage />} />
             <Route path='/contact-us' element={<ContactUsPage />} />
+            <Route path='/formations' element={<FormationsPage />} />
+            <Route path='/formation_details/:id' element={<DetailsFormationPage />} />
 
             <Route path='*' element={<NotFound />} />
           </Routes>
