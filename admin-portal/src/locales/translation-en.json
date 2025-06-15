@@ -1,0 +1,33 @@
+{
+  "login": {
+    "title": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "loginBtn": "Login",
+    "googleBtn": "Login with Google",
+    "academy": "Alraed Academy for Training & Formation",
+    "site": "www.academyalraeed.com"
+  },
+  "sidebar": {
+    "menu": "Menu",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "formations": "Formations",
+    "categories": "Categories",
+    "news": "News",
+    "settings": "Settings"
+  },
+  "header": {
+    "search": "Search...",
+    "profile": "My Profile",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "dashboard": {
+    "totalViews": "Total Views",
+    "totalFormations": "Total Formations",
+    "totalUsers": "Total Users",
+    "totalCategories": "Total Categories"
+  }
+}

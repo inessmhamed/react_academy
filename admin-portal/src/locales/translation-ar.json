@@ -1,0 +1,33 @@
+{
+  "login": {
+    "title": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "loginBtn": "دخول",
+    "googleBtn": "تسجيل الدخول بواسطة جوجل",
+    "academy": "أكاديمية الرائد للتدريب والتكوين",
+    "site": "www.academyalraeed.com"
+  },
+  "sidebar": {
+    "menu": "القائمة",
+    "dashboard": "لوحة التحكم",
+    "users": "المستخدمين",
+    "formations": "التكوينات",
+    "categories": "الفئات",
+    "news": "الأخبار",
+    "settings": "الإعدادات"
+  },
+  "header": {
+    "search": "بحث...",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "dashboard": {
+    "totalViews": "إجمالي المشاهدات",
+    "totalFormations": "إجمالي التكوينات",
+    "totalUsers": "إجمالي المستخدمين",
+    "totalCategories": "إجمالي الفئات"
+  }
+}
