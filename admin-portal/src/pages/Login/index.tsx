@@ -24,7 +24,10 @@ const Login: React.FC = () => {
     'login.loginBtn': 'Login',
     'login.googleBtn': 'Login with Google',
     'login.academy': 'Alraed Academy for Training & Formation',
-    'login.site': 'www.academyalraeed.com'
+    'login.site': 'www.academyalraeed.com',
+    'login.forgotPassword': 'Forgot Password?',
+    'login.noAccount': 'Don\'t have an account?',
+    'login.createAccount': 'Create Account'
   };
 
   // Safe translation function
@@ -149,6 +152,15 @@ const Login: React.FC = () => {
                 </label>
               </div>
 
+              <Link
+                to="/reset-password"
+                className="text-sm font-medium text-primary hover:text-primary-hover"
+              >
+                {safeT('login.forgotPassword')}
+              </Link>
+            </div>
+
+            <div className="flex justify-end">
               <button
                 type="button"
                 onClick={toggleLanguage}
@@ -186,7 +198,19 @@ const Login: React.FC = () => {
             </div>
           </form>
 
-          <p className="mt-6 text-center text-sm text-gray-600">
+          <div className="mt-6 text-center">
+            <p className="text-sm text-gray-600">
+              {safeT('login.noAccount')}{' '}
+              <Link
+                to="/create-account"
+                className="font-medium text-primary hover:text-primary-hover"
+              >
+                {safeT('login.createAccount')}
+              </Link>
+            </p>
+          </div>
+
+          <p className="mt-4 text-center text-sm text-gray-600">
             {safeT('login.site')}
           </p>
         </div>

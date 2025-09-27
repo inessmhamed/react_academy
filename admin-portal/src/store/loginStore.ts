@@ -27,6 +27,39 @@ interface RefreshTokenResponse {
   expiresIn: number;
 }
 
+interface ResetPasswordRequest {
+  email: string;
+}
+
+interface ResetPasswordResponse {
+  message: string;
+  success: boolean;
+}
+
+interface ConfirmResetPasswordRequest {
+  token: string;
+  newPassword: string;
+}
+
+interface ConfirmResetPasswordResponse {
+  message: string;
+  success: boolean;
+}
+
+interface RegisterRequest {
+  name: string;
+  email: string;
+  telephone: string;
+  password: string;
+  role?: string;
+}
+
+interface RegisterResponse {
+  message: string;
+  user: User;
+  success: boolean;
+}
+
 class LoginStore {
 
   /**
@@ -34,6 +67,7 @@ class LoginStore {
    */
   async login(credentials: LoginCredentials): Promise<LoginResponse> {
     try {
+      console.log('login:', credentials);
       const response = await fetch(`${apiUrl}/login`, {
         method: 'POST',
         headers: {
@@ -64,6 +98,32 @@ class LoginStore {
       }
     } catch (error: any) {
       throw new Error(error.message || 'Login failed');
+    }
+  }
+
+  /**
+   * Register service - creates new user account
+   */
+  async register(userData: RegisterRequest): Promise<RegisterResponse> {
+    try {
+      const response = await fetch(`${apiUrl}/register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify(userData)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || 'Registration failed');
+      }
+
+      const data: RegisterResponse = await response.json();
+      return data;
+    } catch (error: any) {
+      throw new Error(error.message || 'Registration failed');
     }
   }
 
@@ -231,6 +291,58 @@ class LoginStore {
 
     return true;
   }
+
+  /**
+   * Request password reset - sends reset email to user
+   */
+  async requestPasswordReset(email: string): Promise<ResetPasswordResponse> {
+    try {
+      const response = await fetch(`${apiUrl}/reset-password`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({ email })
+      });
+
+      const data: ResetPasswordResponse = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to send reset email');
+      }
+
+      return data;
+    } catch (error: any) {
+      throw new Error(error.message || 'Failed to send reset email');
+    }
+  }
+
+  /**
+   * Confirm password reset with token and new password
+   */
+  async confirmPasswordReset(token: string, newPassword: string): Promise<ConfirmResetPasswordResponse> {
+    try {
+      const response = await fetch(`${apiUrl}/reset-password/confirm`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({ token, newPassword })
+      });
+
+      const data: ConfirmResetPasswordResponse = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to reset password');
+      }
+
+      return data;
+    } catch (error: any) {
+      throw new Error(error.message || 'Failed to reset password');
+    }
+  }
 }
 
 // Create and export a singleton instance
@@ -238,4 +350,15 @@ const loginStore = new LoginStore();
 export default loginStore;
 
 // Export types for use in components
-export type { User, LoginCredentials, LoginResponse, RefreshTokenResponse };
+export type { 
+  User, 
+  LoginCredentials, 
+  LoginResponse, 
+  RefreshTokenResponse, 
+  ResetPasswordRequest, 
+  ResetPasswordResponse, 
+  ConfirmResetPasswordRequest, 
+  ConfirmResetPasswordResponse,
+  RegisterRequest,
+  RegisterResponse
+};

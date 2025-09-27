@@ -8,7 +8,7 @@ const UnderHeader = ({ img_underHeader, title_underHeader }: Props) => {
 
     return (
         <div className={styles['underHeader']}>
-            <img src={img_underHeader} className={styles.underHeader_content} alt='underHeader image' />
+            {/* <img src={img_underHeader} className={styles.underHeader_content} alt='underHeader image' /> */}
             <div className={styles.title}>
                 <p> {title_underHeader} </p>
             </div>
