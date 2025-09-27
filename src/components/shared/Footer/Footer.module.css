@@ -1,0 +1,252 @@
+/* Main Footer Styles */
+.footer {
+  width: 100%;
+  background: linear-gradient(135deg, #0a4d6d, #09557d, #0a4d6d);
+  color: white;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer Content Block */
+.footer-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Each footer section - equal width */
+.logo-part,
+.element-contact,
+.info-centre,
+.info-media {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Logo Section */
+.logo-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.title-header {
+  font-size: 18px;
+  margin: 15px 0;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.element-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.element-contact h4,
+.info-centre h4,
+.info-media h4 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.element-contact h4::after,
+.info-centre h4::after,
+.info-media h4::after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0; /* Uses 'left' in LTR and 'right' in RTL languages */
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.info_content {
+  /* margin-top: 16px; */
+}
+
+.flx-row {
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  gap: 10px;
+}
+
+.flx-row:hover {
+  transform: translateX(5px);
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #21678c;
+  padding: 8px;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.flx-row:hover .info-icon {
+  background-color: #ffffff;
+  color: #09557d;
+}
+
+.info {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Force LTR direction for content that should not be reversed in RTL mode */
+.ltr-text {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+/* Academy Vision Section */
+.info-centre p {
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.info-intro {
+  text-align: justify;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Social Media Section */
+.flx-row-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.iconStyle {
+  font-size: 35px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.iconStyle:hover {
+  color: #21678c;
+  transform: translateY(-5px);
+  filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.4));
+}
+
+.telegramIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.telegramIcon:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.2) drop-shadow(0 5px 15px rgba(255, 255, 255, 0.4));
+}
+
+/* Copyright Section */
+.footer__copyright {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__copyright p {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Helper Classes */
+.icon-flip {
+  transform: scaleX(-1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .footer-block {
+    justify-content: space-around;
+  }
+  
+  .logo-part,
+  .element-contact,
+  .info-centre,
+  .info-media {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-part,
+  .element-contact,
+  .info-centre,
+  .info-media {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .element-contact h4::after,
+  .info-centre h4::after,
+  .info-media h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .flx-row {
+    justify-content: center;
+  }
+  
+  .info-icon {
+    margin-right: 10px;
+  }
+  
+  .flx-row-media {
+    justify-content: center;
+  }
+  
+  .info-intro {
+    text-align: center;
+  }
+}

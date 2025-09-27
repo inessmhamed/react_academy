@@ -1,0 +1,24 @@
+.app {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  background-image: url('./assets/Formation/underheader.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.rtl .slick-slider {
+  direction: rtl;
+}

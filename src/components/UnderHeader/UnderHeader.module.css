@@ -1,0 +1,33 @@
+.underHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background: transparent;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #09557d; 
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 25px;
+    }
+}

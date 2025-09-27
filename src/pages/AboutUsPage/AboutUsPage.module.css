@@ -1,0 +1,25 @@
+.container {
+    padding: 20px;
+    display: flex;
+
+}
+
+.title {
+    color: #09557d;
+
+}
+
+.icon {
+    margin-inline-end: 5px;
+    color: #f2018e;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.aboutUscontent {
+    padding-inline-end: 10px;
+
+}

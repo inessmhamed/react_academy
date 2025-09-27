@@ -1,0 +1,19 @@
+.Carousel-container {
+    /* max-width: 1500px; */
+    margin: auto;
+}
+
+.carousel .slide img {
+    width: 100%;
+   
+}
+.carousel-image img{
+    height: 450px;
+    max-height: 500px;
+}
+@media (min-width: 1500px) {
+    .carousel-image img {
+        height: 500px;
+        max-height: 500px;
+    }
+}
