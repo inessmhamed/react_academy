@@ -4,8 +4,11 @@ import { useTranslation } from 'react-i18next';
 import DefaultLayout from './components/Layout/DefaultLayout';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
+import ResetPassword from './pages/ResetPassword';
+import CreateAccount from './pages/CreateAccount';
 import Formations from './pages/Formations';
 import CreateFormation from './pages/Formations/createFormation';
+import Users from './pages/Users';
 import { loginStore } from './store';
 
 const App: React.FC = () => {
@@ -53,6 +56,8 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/create-account" element={<CreateAccount />} />
         <Route
           path="/"
           element={
@@ -77,6 +82,7 @@ const App: React.FC = () => {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="formations" element={<Formations />} />
           <Route path="formations/create" element={<CreateFormation />} />
+          <Route path="users" element={<Users />} />
           {/* Add more routes here as needed */}
         </Route>
       </Routes>

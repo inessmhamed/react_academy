@@ -1,5 +1,5 @@
 export { default as loginStore } from './loginStore';
-export type { User, LoginCredentials, LoginResponse } from './loginStore';
+export type { User as LoginUser, LoginCredentials, LoginResponse } from './loginStore';
 
 export { default as formationStore } from './formationStore';
 export type { 
@@ -18,3 +18,12 @@ export type {
   CategoryResponse, 
   CategoriesResponse 
 } from './categoryStore';
+
+export { default as userStore } from './userStore';
+export type { 
+  User, 
+  CreateUserData, 
+  UpdateUserData, 
+  UserResponse, 
+  UsersResponse 
+} from './userStore';

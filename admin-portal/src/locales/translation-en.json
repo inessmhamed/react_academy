@@ -7,6 +7,29 @@
     "loginBtn": "Login",
     "googleBtn": "Login with Google",
     "academy": "Alraed Academy for Training & Formation",
+    "site": "www.academyalraeed.com",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create Account"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "subtitle": "Enter your email address and we'll send you a link to reset your password",
+    "email": "Email Address",
+    "sendResetLink": "Send Reset Link",
+    "backToLogin": "Back to Login",
+    "checkEmail": "Check Your Email",
+    "emailSent": "We've sent a password reset link to your email address. Please check your inbox and follow the instructions.",
+    "confirmTitle": "Set New Password",
+    "confirmSubtitle": "Enter your new password below",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "resetPasswordBtn": "Reset Password",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 8 characters long",
+    "success": "Password reset successful! You can now login with your new password.",
+    "invalidToken": "Invalid or expired reset token. Please request a new password reset.",
+    "academy": "Alraed Academy for Training & Formation",
     "site": "www.academyalraeed.com"
   },
   "sidebar": {
@@ -29,5 +52,39 @@
     "totalFormations": "Total Formations",
     "totalUsers": "Total Users",
     "totalCategories": "Total Categories"
+  },
+  "createAccount": {
+    "title": "Create Account",
+    "subtitle": "Join Alraed Academy for Training & Formation",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "role": "Role",
+    "createBtn": "Create Account",
+    "googleBtn": "Sign up with Google",
+    "academy": "Alraed Academy for Training & Formation",
+    "site": "www.academyalraeed.com",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign In",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "passwordTooShort": "Password must be at least 8 characters long",
+    "success": "Account created successfully! You can now sign in.",
+    "roles": {
+      "user": "User",
+      "admin": "Admin",
+      "instructor": "Instructor"
+    }
+  },
+  "users": {
+    "addUser": "Add User",
+    "noUsers": "No users available currently.",
+    "management": "Users Management",
+    "createFirst": "Create First User"
+  },
+  "formations": {
+    "addFormation": "Add Formation",
+    "noFormations": "No formations available currently."
   }
 }

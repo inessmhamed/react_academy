@@ -14,38 +14,35 @@ import DetailsFormationPage from './pages/DetailsFormationPage/DetailsFormationP
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 
-
 const App = () => {
   const { t } = useTranslation();
-
 
   useEffect(() => {
     document.title = t('common.AlRaeed Academy');
     document.dir = i18n.dir();
     document.documentElement.lang = i18n.language;
-
   }, [t]);
 
   return (
     <>
-
       <div className='app'>
-        <Header />
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/home' element={<HomePage />} />
-            <Route path='/about-us' element={<AboutUsPage />} />
-            <Route path='/contact-us' element={<ContactUsPage />} />
-            <Route path='/formations' element={<FormationsPage />} />
-            <Route path='/formation_details/:id' element={<DetailsFormationPage />} />
+        <div>
+          <Header />
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/home' element={<HomePage />} />
+              <Route path='/about-us' element={<AboutUsPage />} />
+              <Route path='/contact-us' element={<ContactUsPage />} />
+              <Route path='/formations' element={<FormationsPage />} />
+              <Route path='/formation_details/:id' element={<DetailsFormationPage />} />
 
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        </Suspense>
-        <Footer />
+              <Route path='*' element={<NotFound />} />
+            </Routes>
+          </Suspense>
+          <Footer />
+        </div>
       </div>
-
     </>
   );
 };
